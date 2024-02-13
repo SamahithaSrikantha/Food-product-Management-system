@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>butthi foods</title>
+    <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    <?php include "style.css"; ?>
+</style>
+
+<body>
+    <div class="cotaier" id="header">
+        
+        <nav class="tab">
+            <img id="m" src="./img/WhatsApp Image 2023-01-05 at 10.51.31 PM.jpeg "alt="">
+            <ul class="col-md-12">
+             <li class="col-md-3"><a>Home</a></li>
+            <li class="col-md-3"><a href="product.php">our product</a></li>
+            <li class="col-md-3"><a href="admin_login.php">admin login</a></li>    
+       
+            </ul>
+        </nav>
+    </div>
+    <section id="sd">
+
+        <div class="content">
+            <div class="images">
+                <img class="sld" src="./img/s1.jpg">
+                <img class="sld" src="./img/s2.jpg">
+                <img class="sld" src="./img/s3.jpg">
+            </div>
+            <div onclick="side_slide(-1)" class="slide left">
+                <span class="fas fa-angle-left"></span>
+            </div>
+            <div onclick="side_slide(1)" class="slide right">
+                <span class="fas fa-angle-right"></span>
+            </div>
+            <div class="btm-sliders">
+                <span onclick="btm_slide(1)">demo</span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+            </div>
+        </div>
+        <script>
+            var indexValue = 1;
+
+showImg (indexValue);
+
+function btm_slide (e) { showImg (indexValue = e);}
+
+function side_slide (e) { showImg (indexValue += e);}
+
+function showImg (e){
+var i;
+const img = document.querySelectorAll('.sld');
+const sliders = document.querySelectorAll('btm-slider span')
+if(e> img.length) {indexValue = 1}
+if(e < 1) {indexValue = img.length} for(i = 0; i < img.length; i++){
+img[i].style.display = "none";
+}
+img[indexValue-1].style.display="block";
+
+}
+        </script>
+    </section>
+<section id="feat">
+<h1 class="phead ceter">Our Features</h1> 
+<div class="box">
+    <div class="org">
+        <img src="./img/org.jpg" alt="">
+        <h2 class="ceter">Organic Products</h2>
+        <p class="ceter"> ipsum dolor sit amet consectetur adipisicing elit. At harum minima aspernatur corporis incidunt excepturi eum eos! Officiis, incidunt asperiores</p>
+    </div>
+    
+    <div class="org">
+        <img src="./img/deli.jpg" alt="">
+        <h2 class="ceter">Delivar Products</h2>
+        <p class="ceter"> ipsum dolor sit amet consectetur adipisicing elit. At harum minima aspernatur corporis incidunt excepturi eum eos! Officiis, incidunt asperiores</p>
+    </div>
+    
+    
+    <div class="org">
+        <img src="./img/appr.png" alt="">
+        <h2 class="ceter">Appreciated</h2>
+        <p class="ceter"> ipsum dolor sit amet consectetur adipisicing elit. At harum minima aspernatur corporis incidunt excepturi eum eos! Officiis, incidunt asperiores</p>
+    </div>
+</div>
+<div class="au">
+    <h1 class="ceter">About Us</h1>
+    <p>
+        ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam debitis dolores ab dignissimos obcaecati labore mollitia accusamus placeat magni enim aliquid aspernatur culpa magnam quia reiciendis, sequi molestiae. Sequi incidunt fuga beatae architecto voluptatibus, sapiente praesentium dicta doloremque nemo sint, officia placeat eaque aliquam eveniet reprehenderit aperiam? Amet laborum ex sapiente libero, quasi officiis consectetur est nesciunt ad, aspernatur ipsum. Unde rem corporis vitae quas ea laudantium necessitatibus, adipisci facilis sapiente placeat atque cupiditate reprehenderit impedit explicabo dolorum aspernatur.
+    </p>
+    <p>ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus maxime quam, dolorem corrupti cumque sit similique corporis dolor, perspiciatis sint voluptatem sunt veniam cum porro! Sit laboriosam adipisci ipsam quaerat magnam porro est soluta illum? Suscipit odit eos blanditiis saepe esse temporibus praesentium distinctio quam rerum fugiat exercitationem voluptatum atque laboriosam eaque delectus assumenda neque nobis eum soluta odio adipisci explicabo, cumque minus. Non rem repellat et? Reiciendis dignissimos harum rem assumenda distinctio, delectus expedita itaque. Consequatur excepturi debitis sit. Deserunt id officiis quos eos adipisci delectus fugiat, commodi veniam perferendis in autem corrupti similique eligendi nesciunt earum rerum voluptatem ducimus veritatis consequatur ab. Id molestiae alias assumenda omnis labore nisi iste blanditiis optio inventore. Ipsam quis repudiandae libero aliquid? Obcaecati laborum, recusandae ut quidem minus quam expedita, nesciunt architecto animi placeat quaerat rem, cum doloremque tempora. Obcaecati recusandae nisi ipsam perferendis fugiat mollitia dolores nesciunt? A, ea ex? Velit iste consectetur quos ad modi aut aspernatur corrupti et. Praesentium possimus nemo cum aliquid nihil velit, saepe ab rerum quod officia tenetur, consectetur corrupti voluptas excepturi optio nulla fugiat iste maiores. Aut, ratione culpa deleniti obcaecati autem illo laborum hic, placeat laudantium quasi beatae eos alias fugiat doloribus odio.</p>
+</div>
+
+<div class="co">
+    <h1 class="p">Cotact us</h1>
+    <p class="p">#197,Gombe manne,vishweshwaraiah road,mysuru
+        / butthi foods,saraswathi puram,8th main 3rd cross mysuru.
+        <p class="p">
+        con num-9448856487
+
+        </p>
+        <p class="p">
+email-butthifoods@gmail.com
+        </p>
+
+    </p>
+</div>
+
+
+
+</section>
+</body>
+
+</html>
+<?php include'connect.php' ?>
